@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo1.css">
+</head>
+<body>
+  <body>    
+    <form action="formulario3.html" method="post">
+        <h1>Comentario</h1>
+        <ul>
+          <li>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="user_name" />
+          </li>
+          <li>
+            <label for="numeros">Calificacion:</label>
+      <select id="numeros">
+      </select>
+  
+      <script>
+          const selectNumeros = document.getElementById('numeros');
+          
+          
+          for (let i = 1; i <= 5; i++) {
+              
+              let opcion = document.createElement('option');
+              opcion.value = i;  
+              opcion.text = ' ' + i;
+              
+              
+              selectNumeros.appendChild(opcion);
+          }
+      </script>
+          
+          
+          <li>
+            <label for="msg">Comentario:</label>
+            <textarea id="msg" name="user_message"></textarea>
+          </li>
+          <li class="button">
+            <button type="submit">Envíar comentario</button>
+          </li>
+         
+        </ul>
+
+    </form>
+      
+
+
+</body>
+</html>
